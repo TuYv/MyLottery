@@ -1,6 +1,6 @@
 package com.rick.lottery.infrastructure.dao;
 
-import com.rick.lottery.infrastructure.po.Activity;
+import com.rick.lottery.infrastructure.po.Award;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -9,10 +9,8 @@ import org.apache.ibatis.annotations.Mapper;
  * Create by 小傅哥(fustack)
  */
 @Mapper
-public interface IActivityDao {
+public interface IAwardDao {
 
-   void insert(Activity req);
-
-   Activity queryActivityById(Long activityId);
+    Award queryAwardInfo(String awardId);
 
 }

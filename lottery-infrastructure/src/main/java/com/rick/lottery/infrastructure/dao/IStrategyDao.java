@@ -1,6 +1,6 @@
 package com.rick.lottery.infrastructure.dao;
 
-import com.rick.lottery.infrastructure.po.Activity;
+import com.rick.lottery.infrastructure.po.Strategy;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -9,10 +9,8 @@ import org.apache.ibatis.annotations.Mapper;
  * Create by 小傅哥(fustack)
  */
 @Mapper
-public interface IActivityDao {
+public interface IStrategyDao {
 
-   void insert(Activity req);
-
-   Activity queryActivityById(Long activityId);
+    Strategy queryStrategy(Long strategyId);
 
 }

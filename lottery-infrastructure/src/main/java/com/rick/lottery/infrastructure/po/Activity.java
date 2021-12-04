@@ -4,13 +4,15 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * @author Max.Tu
- * @program MyLottery
- * @description 活动基础信息表
- * @create 2021-11-27 23:22
- **/
+ * 活动基础信息表
+ * <p>
+ * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
+ * 公众号：bugstack虫洞栈
+ * Create by 小傅哥(fustack)
+ */
 @Data
 public class Activity {
+
     // 自增ID
     private Long id;
 

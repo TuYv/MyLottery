@@ -17,7 +17,6 @@ import lombok.RequiredArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 public class ActivityRes implements Serializable {
 
     private Result result;
