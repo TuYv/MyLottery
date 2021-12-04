@@ -1,6 +1,7 @@
 package com.rick.lottery.common;
 
 import java.io.Serializable;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
@@ -10,6 +11,7 @@ import lombok.Data;
  * @create 2021-11-27 23:18
  **/
 @Data
+@AllArgsConstructor
 public class Result implements Serializable {
 
     private String code;
@@ -25,10 +27,5 @@ public class Result implements Serializable {
 
     public static Result buildErrorResult() {
         return new Result(Constants.ResponseCode.UN_ERROR.getCode(), Constants.ResponseCode.UN_ERROR.getInfo());
-    }
-
-    public Result(String code, String info) {
-        this.code = code;
-        this.info = info;
     }
 }

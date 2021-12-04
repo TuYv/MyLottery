@@ -10,6 +10,7 @@ import com.rick.lottery.rpc.dto.ActivityDto;
 import com.rick.lottery.rpc.req.ActivityReq;
 import com.rick.lottery.rpc.res.ActivityRes;
 import javax.annotation.Resource;
+import org.apache.dubbo.config.annotation.Service;
 
 /**
  * @author Max.Tu
@@ -17,6 +18,7 @@ import javax.annotation.Resource;
  * @description 活动展台
  * @create 2021-11-27 23:29
  **/
+@Service
 public class ActivityBooth implements IActivityBooth {
 
     @Resource private IActivityDao activityDao;
@@ -24,6 +26,7 @@ public class ActivityBooth implements IActivityBooth {
     @Override
     public ActivityRes queryActivityById(ActivityReq req) {
         Activity activity = activityDao.queryActivityById(req.getActivityId());
+        //Activity activity = activityDao.queryActivityById(req.getActivityId());
 
         ActivityDto activityDto = ActivityDto.builder()
             .activityId(activity.getId())
