@@ -4,9 +4,9 @@
 
     <select id="queryAwardInfo" parameterType="java.lang.String" resultType="com.rick.lottery.infrastructure.po.Award">
         SELECT
-        id, awardId, awardType, awardCount, awardName, awardContent, createTime, updateTime
+            id, award_id, award_type, award_name, award_content
         FROM award
-        WHERE awardId = #{awardId}
+        WHERE award_id = #{awardId}
     </select>
 
 </mapper>

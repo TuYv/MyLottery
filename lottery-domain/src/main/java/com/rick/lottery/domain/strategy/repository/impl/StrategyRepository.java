@@ -10,6 +10,7 @@ import com.rick.lottery.infrastructure.po.Strategy;
 import com.rick.lottery.infrastructure.po.StrategyDetail;
 import java.util.List;
 import javax.annotation.Resource;
+import org.springframework.stereotype.Component;
 
 /**
  * @author Max.Tu
@@ -17,6 +18,7 @@ import javax.annotation.Resource;
  * @description 策略表仓储服务
  * @create 2021-11-30 00:02
  **/
+@Component
 public class StrategyRepository implements IStrategyRepository {
 
     @Resource

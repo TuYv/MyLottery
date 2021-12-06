@@ -1,5 +1,0 @@
-com/rick/lottery/rpc/IActivityBooth.class
-com/rick/lottery/rpc/dto/ActivityDto$ActivityDtoBuilder.class
-com/rick/lottery/rpc/dto/ActivityDto.class
-com/rick/lottery/rpc/req/ActivityReq.class
-com/rick/lottery/rpc/res/ActivityRes.class
