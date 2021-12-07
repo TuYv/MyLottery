@@ -27,7 +27,7 @@ public class DrawConfig {
 
     @PostConstruct
     public void init() {
-        drawAlgorithmGroup.put(StrategyMode.ENTIRETY.getCode(), entiretyRateRandomDrawAlgorithm);
-        drawAlgorithmGroup.put(StrategyMode.SINGLE.getCode(), singleRateRandomDrawAlgorithm);
+        drawAlgorithmGroup.put(StrategyMode.SINGLE.getCode(), entiretyRateRandomDrawAlgorithm);
+        drawAlgorithmGroup.put(StrategyMode.ENTIRETY.getCode(), singleRateRandomDrawAlgorithm);
     }
 }
